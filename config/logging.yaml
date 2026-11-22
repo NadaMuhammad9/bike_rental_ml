@@ -1,0 +1,30 @@
+# Configure logging to track execution events, monitor model performance and capture warnings and errors throughout the workflow
+
+# Logging configuration version
+version: 1
+
+# Define the format of log messages
+formatters:
+  default:
+    # Include timestamp, log level, logger name, and message
+    format: '%(asctime)s - %(levelname)s - %(name)s - %(message)s'
+
+# Define where log messages are sent
+handlers:
+  console:
+    # Use Python's built-in console logging handler
+    class: logging.StreamHandler
+
+    # Use the "default" formatter defined above
+    formatter: default
+
+    # Write logs to standard output (console)
+    stream: ext://sys.stdout
+
+# Configure the root logger.
+root:
+  # Show INFO messages and higher (WARNING, ERROR, CRITICAL)
+  level: INFO
+
+  # Send root logger messages to the console handler
+  handlers: [console]

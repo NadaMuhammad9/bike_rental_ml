@@ -1,0 +1,61 @@
+# Git
+.git/
+.gitignore
+.github/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+
+# Packaging
+*.egg-info/
+dist/
+build/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter / Notebooks
+.ipynb_checkpoints/
+Notebooks/
+
+# Data
+data/raw/
+data/processed/
+
+
+# ML Experiment Artifacts
+mlruns/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+tmp/
+temp/
+*.tmp
+*.temp
+.temp/
+
+# Local / Development files
+Makefile
+tests/

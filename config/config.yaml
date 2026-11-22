@@ -1,0 +1,14 @@
+data_path: data/raw/SeoulBikeData.csv
+processed_path: data/processed/SeoulBikeData_processed.csv
+model_path: models/lightgbm_final_model.pkl
+random_state: 42
+n_estimators: 869
+learning_rate: 0.07168038938337792
+max_depth: 5
+num_leaves: 18
+subsample: 0.8363920438556471
+colsample_bytree: 0.6437435164289361
+objective: regression
+verbose: -1
+target_column: Rented Bike Count
+date_column: Date
